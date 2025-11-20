@@ -730,19 +730,22 @@
             }
         }
 .video-container {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%; /* Relación 16:9 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
 }
 
 .hero-video-bg {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  width: 177.77vh; /* 100vh * 16/9 para cubrir el ancho manteniendo proporción */
+  height: 100vh;
+  transform: translate(-50%, -50%) scale(1.1); /* Centrar y hacer zoom 10% */
+  transform-origin: center center;
   border: none;
 }
 </style>
