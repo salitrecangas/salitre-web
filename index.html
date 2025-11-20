@@ -729,7 +729,23 @@
                 padding-bottom: 0.5rem;
             }
         }
-    </style>
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Relación 16:9 */
+  overflow: hidden;
+}
+
+.hero-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+</style>
 </head>
 <body>
     <!-- NAVEGACIÓN -->
